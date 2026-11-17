@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Cinzel:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  /* Typography */
+  --font-heading: 'Bodoni Moda', serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-accent: 'Cinzel', serif;
+
+  /* Primary colors */
+  --color-black: #0B0B0B;
+  --color-charcoal: #141210;
+  --color-ivory: #EFE6DD;
+
+  /* Gold palette */
+  --color-gold: #C6A36A;
+  --color-gold-light: #D8B56A;
+  --color-bronze: #A88957;
+
+  /* Supporting colors */
+  --color-muted: #B8B0A5;
+  --color-border: #514332;
+  --color-light-surface: #F5F0E9;
+
+  /* Backgrounds */
+  --background-dark: #0B0B0B;
+  --background-secondary: #11100F;
+  --background-light: #EFE6DD;
+
+  /* Text */
+  --text-primary: #EFE6DD;
+  --text-secondary: #B8B0A5;
+  --text-dark: #141210;
+
+  /* Transitions */
+  --transition-base: 300ms ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background-dark);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+button, a {
+  transition: var(--transition-base);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-black);
+}
